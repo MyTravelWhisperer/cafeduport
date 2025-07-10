@@ -12,8 +12,6 @@ const inter = Newsreader({
 const interItalic = Lobster_Two({
   weight: ["400", "700"],
 });
-const listOfMainCategories = ["Coffee", "Syrup", "Tea"];
-const listOfCategoryUrl = ["Coffee", "Hatch", "Dark Rost"];
 
 export default function Shop() {
   return (
