@@ -111,27 +111,28 @@ const HomePage = () => {
                   <p className={styles.historyImageDescrptionTextBody}>
                     Café du Port is proudly nestled at the iconic intersection
                     of Barrington and Sackville Street — a crossroads steeped in
-                    Halifax’s urban history. This location has long been a
-                    witness to the city's evolving character, from the bustling
-                    days of the Zellers shopping complex to its transformation
-                    into the beloved Discovery Centre. With each chapter, the
-                    area has remained a central part of Halifax’s downtown
-                    heartbeat. Amidst all the change, one thing has endured: the
-                    building’s historic charm. Its original sandstone exterior,
-                    carefully preserved through time, is not only a striking
-                    architectural feature but also a silent storyteller of the
-                    past. {windowWidth > 1300 && <br />}
+                    Halifax&apos;s urban history. This location has long been a
+                    witness to the city&apos;s evolving character, from the
+                    bustling days of the Zellers shopping complex to its
+                    transformation into the beloved Discovery Centre. With each
+                    chapter, the area has remained a central part of
+                    Halifax&apos;s downtown heartbeat. Amidst all the change,
+                    one thing has endured: the building&apos;s historic charm.
+                    Its original sandstone exterior, carefully preserved through
+                    time, is not only a striking architectural feature but also
+                    a silent storyteller of the past.{" "}
+                    {windowWidth > 1300 && <br />}
                     <br />
                     <br />
                     These timeworn stones embody the spirit of the city —
                     resilient, rooted, and rich with heritage. At Café du Port,
                     we are honored to continue that story by creating a space
-                    where history is not only seen but felt. It’s where French
-                    café culture meets East Coast warmth, and where the past
-                    inspires the present. Whether you're sipping coffee by the
-                    window or gathering with friends, you’ll find that our café
-                    is more than a place — it's a living tribute to Halifax’s
-                    vibrant journey through time.
+                    where history is not only seen but felt. It&apos;s where
+                    French café culture meets East Coast warmth, and where the
+                    past inspires the present. Whether you&apos;re sipping
+                    coffee by the window or gathering with friends, you&apos;ll
+                    find that our café is more than a place — it&apos;s a living
+                    tribute to Halifax&apos;s vibrant journey through time.
                   </p>
                 </div>
               </div>
