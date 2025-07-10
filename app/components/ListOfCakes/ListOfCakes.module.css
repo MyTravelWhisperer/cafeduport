@@ -1,0 +1,140 @@
+.mainCakeSelectionDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.eachCakeMain1Div {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.eachCakeMain1DivSelected {
+  border: 2.5px solid #004236a5; /* subtle light border */
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* smooth hover effect */
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.eachCakeMainDiv {
+  height: auto;
+  width: 390px;
+  margin: 10px;
+  position: relative;
+}
+.eachCakeMainImageDiv {
+  width: 390px;
+  height: 474px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.selectButtonMainDiv {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: #004236;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* subtle light border */
+  border-radius: 6px; /* slightly rounded corners */
+  color: #fff; /* ensure text is readable */
+  cursor: pointer; /* make it feel clickable */
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* smooth hover effect */
+}
+.selectButtonMainDiv:hover {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: #004236;
+  border: 2px solid rgba(255, 255, 255, 0.1); /* subtle light border */
+  border-radius: 6px; /* slightly rounded corners */
+  color: #fff; /* ensure text is readable */
+  cursor: pointer; /* make it feel clickable */
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* smooth hover effect */
+}
+
+.selectText {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 10px;
+  color: #ffffff;
+}
+.eachCakeImage {
+  width: 100%;
+  height: 100%;
+}
+.eachCakeMainImageDiv:hover .eachCakeImage {
+  transform: scale(1.09); /* Zoom in by 10% */
+  cursor: pointer;
+}
+
+.cakeName {
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: #004236cb;
+}
+.cakeDescription {
+  font-size: 16px;
+  font-weight: 500;
+  color: #004236;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px;
+}
+.cakeFullDescription {
+  font-size: 16px;
+  font-weight: 500;
+  color: #004236;
+  text-align: justify;
+  margin: 0px;
+}
+.cakeMoreDetails {
+  font-size: 16px;
+  font-weight: 600;
+  color: #004236;
+  margin: 0px;
+  margin-top: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: right;
+  z-index: 99999999;
+}
+.cakePrice {
+  font-size: 21px;
+  font-weight: 600;
+  color: #004236;
+  margin-top: 13px;
+}
+@media (max-width: 1400px) {
+  .eachCakeMainDiv {
+    height: auto;
+    width: 25vw;
+    margin: 10px;
+    position: relative;
+  }
+  .eachCakeMainImageDiv {
+    width: 25vw;
+    height: calc(25vw * 1.21698);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 700px) {
+  .eachCakeMainDiv {
+    height: auto;
+    width: 38vw;
+    margin: 10px;
+    position: relative;
+  }
+  .eachCakeMainImageDiv {
+    width: 38vw;
+    height: calc(38vw * 1.21698);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}

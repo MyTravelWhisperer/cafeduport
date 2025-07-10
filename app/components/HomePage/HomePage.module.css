@@ -1,0 +1,371 @@
+.mainDivContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.mainHomePageDiv {
+  position: relative;
+}
+.leftsideMainDiv {
+  width: 65vw;
+}
+.rightSideMainDiv {
+  width: 35vw;
+  background-color: #004236;
+}
+.rightSideMaiImageContainerDiv {
+  width: 100%;
+  height: 101vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.videoMainContainer {
+  min-height: 75vh;
+  width: 100%;
+  object-fit: cover;
+}
+.leftSideVideoContainer {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.sloganTextMainDiv {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  top: 22vh;
+  right: 25px;
+}
+.sloganTextMain {
+  color: #97793b;
+  font-size: 600%;
+  margin: 0px;
+}
+.subSloganText {
+  color: #ffffff;
+  font-size: 18px;
+  width: 300px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.mainImageContainer {
+  display: flex;
+  flex-direction: column;
+}
+.secondSectionLeftMainContSide {
+  width: 100%;
+  margin-left: 4vw;
+  position: relative;
+}
+.historyImageDescriptionContainer {
+  position: absolute;
+  top: calc(100vw / 9);
+  right: -250px;
+  background-color: #882513;
+  max-width: 700px;
+}
+.historyImageDescrptionTextTitle {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 400;
+  text-align: left;
+}
+.historyImageDescrptionTextBody {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: justify;
+  line-height: 27px;
+}
+.historyImageDescriptionSecondContainer {
+  margin: 80px;
+}
+.secondSectionLeftSide {
+  margin-bottom: 90px;
+}
+.mainThirdDivContainer {
+  width: 100vw;
+  min-height: 100px;
+  background-color: #004236;
+}
+.mainThirdSecondDivContainer {
+  padding: 4vw;
+}
+.rightSideSecondImageContainerDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerInThirdDiv {
+  font-size: 31px;
+  color: rgb(242, 236, 231);
+}
+.bodyInThirdDiv {
+  font-size: 18px;
+  color: rgb(242, 236, 231);
+  margin-top: -10px;
+}
+.headerInThirdEachItemDiv {
+  font-size: 26px;
+  font-weight: 500;
+  color: rgb(242, 236, 231);
+}
+.bodyInThirdEachItemDiv {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(242, 236, 231);
+  margin-top: -10px;
+}
+.thirdSectionItemDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.responsiveItemImage {
+  width: 100%;
+  height: calc(100vw / 5.8);
+}
+.eachItemDiv {
+  flex: 1;
+}
+.buttonMainDivInThirdEachItemDiv {
+  border-width: 0.7px;
+  border: solid;
+  color: rgb(242, 236, 231);
+  width: fit-content;
+}
+.buttonMainDivInThirdEachItemDiv:hover {
+  border-width: 0.7px;
+  border: solid;
+  border-color: #97793b;
+  width: fit-content;
+}
+.buttonInThirdEachItemDiv {
+  font-size: 21px;
+  margin: 15px;
+  font-weight: 500;
+  color: rgb(242, 236, 231);
+}
+.mainFourthDivContainer {
+  min-height: 200px;
+}
+.followUsOnText {
+  color: #004236;
+  font-size: 48px;
+  font-weight: 600;
+}
+.instacafeduport {
+  color: #004236;
+  font-size: 29px;
+  font-weight: 600;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.mainFourthSecondDivContainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.followUsFbInstaDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 1000px) {
+  .headerInThirdEachItemDiv {
+    font-size: 23px;
+    font-weight: 500;
+    color: rgb(242, 236, 231);
+  }
+  .bodyInThirdEachItemDiv {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(242, 236, 231);
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .thirdSectionItemDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  .responsiveItemImage {
+    width: 100%;
+    height: calc(100vw / 2.5);
+  }
+  .eachItemDiv {
+    flex: 1;
+  }
+  .headerInThirdEachItemDiv {
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #ffffff;
+  }
+  .bodyInThirdEachItemDiv {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: -10px;
+  }
+  .buttonInThirdEachItemDiv {
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+}
+@media (max-width: 1500px) {
+  .historyImageDescriptionContainer {
+    position: absolute;
+    top: 30px;
+    right: -250px;
+  }
+  .rightSideSecondImageContainerDiv {
+    margin-bottom: 250px;
+  }
+}
+@media (max-width: 1300px) {
+  .videoMainContainer {
+    min-height: 75vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .historyImageDescriptionContainer {
+    position: absolute;
+    top: 90px;
+    right: -250px;
+    background-color: #882513;
+    max-width: 600px;
+  }
+  .historyImageDescriptionSecondContainer {
+    margin: 40px;
+  }
+  .historyImageDescrptionTextTitle {
+    color: #ffffff;
+    font-size: 31px;
+    font-weight: 400;
+    text-align: left;
+  }
+  .historyImageDescrptionTextBody {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 200;
+    text-align: justify;
+    line-height: 23px;
+  }
+}
+@media (max-width: 850px) {
+  .leftsideMainDiv {
+    width: 100vw;
+  }
+  .rightSideMainDiv {
+    display: none;
+    width: 0px;
+  }
+  .sloganTextMainDiv {
+    position: absolute;
+    height: 200px;
+    width: 220px;
+    top: 22vh;
+    right: 200px;
+  }
+}
+@media (max-width: 850px) {
+  .secondSectionLeftSide {
+    margin-top: 30px;
+  }
+  .mainImageContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .secondSectionLeftMainContSide {
+    width: 100vw;
+    margin-left: 0px;
+    position: relative;
+  }
+  .historyImageDescriptionContainer {
+    position: static;
+    background-color: #882513;
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .historyImageDescriptionSecondContainer {
+    padding: 37px;
+    margin: 0px;
+  }
+  .historyImageDescrptionTextTitle {
+    color: #ffffff;
+    font-size: 31px;
+    font-weight: 400;
+    margin-top: 17px;
+    text-align: left;
+  }
+  .historyImageDescrptionTextBody {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 200;
+    text-align: justify;
+    line-height: 23px;
+  }
+}
+@media (max-width: 450px) {
+  .leftsideMainDiv {
+    width: 100vw;
+  }
+  .rightSideMainDiv {
+    display: none;
+    width: 0px;
+  }
+  .sloganTextMainDiv {
+    position: absolute;
+    height: 200px;
+    width: 100vw;
+    top: 20vh;
+    left: 0px;
+    align-items: center;
+    text-align: center;
+  }
+  .sloganTextMain {
+    font-size: 490%;
+    font-weight: 600;
+    margin: 0px;
+  }
+  .subSloganText {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 400;
+    width: 100vw;
+
+    text-align: center;
+  }
+  .leftSideVideoContainer {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+  }
+  .videoMainContainer {
+    min-height: 70vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}

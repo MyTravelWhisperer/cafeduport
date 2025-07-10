@@ -1,0 +1,47 @@
+.mainSizeSelectionDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  cursor: pointer;
+}
+.eachSelectionSecondDiv {
+  margin: 20px;
+  min-width: 200px;
+  min-height: 50px;
+  max-width: 400px;
+}
+.eachSelection1DivSelected {
+  border: 2.5px solid #004236a5; /* subtle light border */
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* smooth hover effect */
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.eachSelectionMain1Div {
+  border: 2.5px solid #d9d9df; /* subtle light border */
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* smooth hover effect */
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.selectionName {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #004236cb;
+}
+.selectionDescription {
+  font-size: 16px;
+  font-weight: 500;
+  color: #004236ab;
+  text-align: justify;
+  margin: 0px;
+}
+
+.selectionPrice {
+  font-size: 21px;
+  font-weight: 600;
+  color: #004236;
+  margin-top: 13px;
+}

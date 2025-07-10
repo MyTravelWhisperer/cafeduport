@@ -1,0 +1,84 @@
+.categoryHeaderMainDiv {
+  width: 100%;
+  min-height: 33px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-top: solid;
+  border-top-width: 1px;
+  border-top-color: #c5c4c4;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #c5c4c4;
+}
+.categoryTitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+  color: #004236;
+  cursor: pointer;
+}
+.categoryTitle:hover {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+  color: #004236;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainBottomPageContainerDiv {
+  width: 100vw;
+}
+.mainBottomPageSecondContainerDiv {
+  width: 92vw;
+  margin-left: 4vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 20px;
+}
+.leftSideCategoryMainDiv {
+  width: 410px;
+  margin-right: 30px;
+}
+.rightSideShopMainContainer {
+  width: calc(100% - 440px);
+}
+.rightSideCategoryUrl {
+  display: flex;
+  flex-direction: row;
+}
+.eachUrlText {
+  font-size: 17px;
+  font-weight: 500;
+  color: #004236cb;
+  cursor: pointer;
+}
+.categoryHeader {
+  font-size: 19px;
+  font-weight: 600;
+  color: #004236;
+}
+.eachUrlText:hover {
+  font-size: 17px;
+  font-weight: 500;
+  color: #004236;
+  cursor: pointer;
+}
+.slashSpan {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.customCakeHeaderText {
+  font-size: 51px;
+  font-weight: 500;
+  margin-top: 60px;
+  color: #004236cb;
+  cursor: pointer;
+  text-align: center;
+}

@@ -1,0 +1,184 @@
+.mainCustomCakeContainerDiv {
+  width: 100vw;
+}
+.bottomDetails {
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.bottomSecondDetails {
+  background-color: #004236;
+  min-width: 300px;
+  min-height: 50px;
+  max-width: 100vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 2.5px solid #004236a5; /* subtle light border */
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* smooth hover effect */
+  box-shadow: 0 4px 8px rgba(221, 221, 221, 0.2); /* soft shadow for depth */
+}
+
+.bottomThirdDetails {
+  margin: 10px;
+}
+.eachCakeMainDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.eachCakeMainInformationDiv {
+  max-width: 170px;
+}
+.bottomDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+.continueTextDiv {
+  background-color: #f2ece7;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.continueText {
+  margin: 13px;
+  font-size: 21px;
+  font-weight: 500;
+  color: #004236cb;
+}
+.eachCakeImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+.eachCakeNameText {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px;
+}
+.eachCakeTotalPrice {
+  text-align: center;
+  margin-top: 20px;
+}
+.eachCakeInfoText {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px;
+}
+.mainCustomCakeSecondContainerDiv {
+  width: 92vw;
+  margin-left: 4vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.customCakeHeaderText {
+  font-size: 51px;
+  font-weight: 500;
+  margin-top: 60px;
+  color: #004236cb;
+  cursor: pointer;
+  text-align: center;
+}
+.fullStepsDiv {
+  background-color: #d9d9df;
+  width: 100%;
+  height: 3px;
+  margin-top: 64px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+.eachStepIndexCustom {
+  background-color: #d9d9df;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+.eachStepSelectedIndexCustom {
+  background-color: #004236;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+.eachSelectionMainDiv {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.mainDivHeader {
+  font-size: 33px;
+  font-weight: 500;
+  color: #004236;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.mainDivSecondHeader {
+  font-size: 16px;
+  font-weight: 500;
+  color: #004236;
+  margin: 0px;
+}
+.eachStepCustom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.eachStepIndexText {
+  font-size: 23px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0px;
+}
+.eachStepText {
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #898989;
+  cursor: pointer;
+  margin: 10px;
+  text-align: center;
+}
+.eachStepSelectedText {
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #004236;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px;
+}

@@ -1,0 +1,31 @@
+.inputTextMainDiv {
+  border: 2.5px solid #d9d9df; /* subtle light border */
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* smooth hover effect */
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.inputTextSecondMainDiv {
+  margin: 15px;
+}
+.inputTextBox {
+  background-color: transparent;
+  border: 0px solid #ccc;
+  width: 100%;
+  font-size: 19px;
+  font-weight: 400;
+  color: #004236cb;
+  resize: vertical;
+}
+.inputTextBox:focus,
+.inputTextBox:active {
+  background-color: transparent;
+  border-color: #ccc;
+  box-shadow: none;
+  outline: none;
+}
+.helpText {
+  font-size: 12px;
+  font-weight: 400;
+  color: #004236cb;
+}

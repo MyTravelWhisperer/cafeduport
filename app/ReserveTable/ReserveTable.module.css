@@ -1,0 +1,98 @@
+.mainHomePageDiv {
+  position: relative;
+}
+.mainBodyDiv {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.bookingTableHeaderDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.bookingTableHeaderText {
+  font-size: 43px;
+  font-weight: 400;
+  margin: 0px;
+  color: #004236;
+}
+.bookingTableParagraphText {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+  margin: 0px;
+  text-align: justify;
+  color: #004236;
+}
+
+.tablePic {
+  width: 700px;
+  height: 450px;
+  object-fit: contain;
+}
+.mainReservationTop {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 50px;
+}
+.reservationImageDiv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.reservationButtonSecondDiv {
+  width: 80%;
+}
+.reservationButtonDiv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.bookingTableMainDivButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.bookingTableButton {
+  width: 90%;
+  height: 40px;
+}
+
+@media (max-width: 1400px) {
+  .mainBodyDiv {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainReservationTop {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 0px;
+  }
+  .tablePic {
+    width: 100vw;
+    height: 450px;
+    object-fit: contain;
+  }
+  .reservationButtonSecondDiv {
+    width: 100%;
+  }
+  .bookingTableParagraphText {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0px;
+    text-align: justify;
+    color: #004236;
+  }
+}

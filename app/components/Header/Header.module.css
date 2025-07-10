@@ -1,0 +1,136 @@
+.headerMainContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+  width: 100vw;
+}
+.leftMenuMainContainer {
+  width: 65vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #004236;
+  border-right: solid;
+  border-right-width: 1px;
+  border-right-color: #001a15;
+}
+.headerSecondContainer {
+  width: 92vw;
+  margin-left: 4vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menuIconMainDiv {
+  cursor: pointer;
+}
+.headerLeftSideMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+.headerRightSideMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.languageButton {
+  font-size: 21px;
+  color: #ffffff;
+}
+.languageButton:hover {
+  font-size: 21px;
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.leftSideMenuSecondContainer {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.leftSideMenuBottomOption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px;
+  margin-left: 120px;
+}
+.menuItemsOption {
+  cursor: pointer;
+}
+.menuItemsText {
+  font-size: 36px;
+  color: #ffffff;
+}
+.menuItemsText:hover {
+  font-size: 36px;
+  color: #97793b;
+}
+.mainLogoHeader {
+  position: absolute;
+  top: 25px;
+  left: calc(50vw - 125.4px);
+  cursor: pointer;
+}
+.languageMainCont {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .leftMenuMainContainer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #004236;
+    border-right: solid;
+    border-right-width: 1px;
+    border-right-color: #001a15;
+  }
+}
+
+@media (max-width: 1000px) {
+  .headerRightSideMain {
+    display: none;
+  }
+  .languageMainCont {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .leftSideMenuBottomOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .headerRightSideMain {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .mainLogoHeader {
+    position: absolute;
+    top: 18px;
+    left: calc(50vw - 90px);
+  }
+}
+@media (max-width: 400px) {
+  .menuItemsText {
+    font-size: 28px;
+    color: #ffffff;
+  }
+  .menuItemsText:hover {
+    font-size: 28px;
+    color: #97793b;
+  }
+}
