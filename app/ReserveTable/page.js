@@ -12,6 +12,8 @@ const interNews = Newsreader({
 });
 import { Lobster_Two } from "next/font/google";
 const inter = Lobster_Two({
+  subsets: ["latin"],
+
   weight: ["400", "700"],
 });
 export default function ReserveTable() {

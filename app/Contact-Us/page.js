@@ -11,6 +11,7 @@ const inter = Newsreader({
 });
 
 const interItalic = Lobster_Two({
+  subsets: ["latin"],
   weight: ["400", "700"],
 });
 

@@ -10,6 +10,8 @@ const inter = Newsreader({
   weight: ["300", "400", "500", "600", "700"],
 });
 const interItalic = Lobster_Two({
+  subsets: ["latin"],
+
   weight: ["400", "700"],
 });
 const listOfMainCategories = ["Coffee", "Syrup", "Tea"];
