@@ -1,0 +1,153 @@
+.categoryHeaderMainDiv {
+  width: 100%;
+  min-height: 33px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-top: solid;
+  border-top-width: 1px;
+  border-top-color: #c5c4c4;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #c5c4c4;
+}
+.categoryTitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+  color: #004236;
+  cursor: pointer;
+}
+.categoryTitle:hover {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+  color: #004236;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainBottomPageContainerDiv {
+  width: 100vw;
+}
+.mainBottomPageSecondContainerDiv {
+  width: 92vw;
+  margin-left: 4vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 20px;
+}
+.leftSideCategoryMainDiv {
+  width: 410px;
+  margin-right: 30px;
+}
+.rightSideShopMainContainer {
+  width: calc(100% - 440px);
+}
+.rightSideCategoryUrl {
+  display: flex;
+  flex-direction: row;
+}
+.eachUrlText {
+  font-size: 17px;
+  font-weight: 500;
+  color: #004236cb;
+  cursor: pointer;
+}
+.categoryHeader {
+  font-size: 19px;
+  font-weight: 600;
+  color: #004236;
+}
+.eachUrlText:hover {
+  font-size: 17px;
+  font-weight: 500;
+  color: #004236;
+  cursor: pointer;
+}
+.slashSpan {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.customCakeHeaderText {
+  font-size: 51px;
+  font-weight: 500;
+  margin-top: 60px;
+  color: #004236cb;
+  cursor: pointer;
+  text-align: center;
+}
+.headerText {
+  font-size: 21px;
+  font-weight: 500;
+  color: #004236cb;
+  cursor: pointer;
+  text-align: center;
+}
+.bodyText {
+  font-size: 16px;
+  font-weight: 500;
+  color: #004236cb;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.mainBodyDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+}
+.mapContactUsDiv {
+  width: 80%;
+  margin-bottom: 50px;
+}
+.mainMenuBodyDiv {
+  width: 80%;
+}
+.menuHeaderDiv {
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #004236cb;
+  margin-bottom: 20px;
+}
+.menuheaderText {
+  font-size: 41px;
+  font-weight: 500;
+  color: #004236cb;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.eachMenuItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.eachMenuItemText {
+  font-size: 23px;
+  font-weight: 500;
+  color: #004236cb;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.eachMenuDescriptionText {
+  font-size: 23px;
+  font-weight: 400;
+  width: 70%;
+  color: #888;
+  text-align: center;
+  margin-top: 3px;
+}

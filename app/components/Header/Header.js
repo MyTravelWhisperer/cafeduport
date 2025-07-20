@@ -144,9 +144,11 @@ const Header = ({ type }) => {
             </div>
             <div className={styles.leftSideMenuBottomOption}>
               <div className={styles.leftSideMenuBottomOptionMainDiv}>
-                <div className={styles.menuItemsOption}>
-                  <p className={styles.menuItemsText}>Menu</p>
-                </div>
+                <Link href="/Menu">
+                  <div className={styles.menuItemsOption}>
+                    <p className={styles.menuItemsText}>Menu</p>
+                  </div>
+                </Link>
                 <Link href="/Shop">
                   <div className={styles.menuItemsOption}>
                     <p className={styles.menuItemsText}>Shop</p>
