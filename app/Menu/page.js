@@ -34,10 +34,9 @@ export default function Menu() {
           content="Browse the menu at Cafe du Port on Barrington Street in Halifax. Enjoy fresh French pastries, artisan coffee, and custom-made cakes served daily."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.cafeduport.ca/menu" />
         <meta
-          property="og:image"
-          content="https://www.cafeduport.ca/images/og-menu.jpg"
+          property="og:url"
+          content="https://www.xn--cafduport-d4a.com/Menu"
         />
       </Head>
       <main className={inter.className}>

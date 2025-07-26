@@ -106,6 +106,9 @@ const Footer = () => {
           <Link href="/Contact-Us">
             <p className={styles.reservationsAndOtherLink}>Contact Us</p>
           </Link>
+          <Link href="/Franchising">
+            <p className={styles.reservationsAndOtherLink}>Franchising</p>
+          </Link>
         </div>
       </div>
     </footer>
