@@ -132,7 +132,9 @@ const AdditionalInformation = ({ sendCheck }) => {
           placeHolder={
             "When would you like to pick up your cake? Let us know the date!"
           }
-          helpText={"Required*"}
+          helpText={
+            "Please select a pickup date (Required*). We require 2 business days to prepare your cake. For orders needed sooner, please call us."
+          }
           inputData={(newName) => {
             setPickupDate(newName);
           }}
@@ -145,7 +147,9 @@ const AdditionalInformation = ({ sendCheck }) => {
           placeHolder={
             "When would you like to pick up your cake? Let us know the time!"
           }
-          helpText={"Required*"}
+          helpText={
+            "Select a pickup time (Required*). Let us know when you'd like to collect your cake."
+          }
           inputData={(newName) => {
             setPickupTime(newName);
           }}
