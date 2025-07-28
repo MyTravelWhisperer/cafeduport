@@ -14,6 +14,7 @@ import {
 } from "../components/ListOfSizes/ListOfSizes";
 import { AdditionalInformation } from "../components/AdditionalInformation/AdditionalInformation";
 import Head from "next/head";
+import { route } from "preact-router";
 
 import { Newsreader } from "next/font/google";
 const inter = Newsreader({
@@ -37,6 +38,8 @@ export default function Shop() {
   const [selectedSize, setSelectedSize] = useState();
   const [selectedFlavor, setSelectedFlavor] = useState();
   const [nextCheck, setNextCheck] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -44,6 +47,8 @@ export default function Shop() {
   const [colorOfMessageText, setColorOfMessageText] = useState("");
   const [colorOfCake, setColorOfCake] = useState("");
   const [additionalInformation, setAdditionalInformation] = useState("");
+  const [pickupDate, setPickupDate] = useState("");
+  const [pickupTime, setPickupTime] = useState("");
   useEffect(() => {
     var price = 0;
     if (selectedCake?.fields?.cakeBasePrice) {
@@ -58,8 +63,9 @@ export default function Shop() {
     setTotalPrice(price);
   }, [selectedCake, selectedSize, selectedFlavor]);
 
-  const sendDatatoHeroku = async () => {
+  const sendDatatoHeroku = async (paymentType) => {
     try {
+      setLoading(true);
       const response = await fetch(
         "https://cafe-du-port-backend-eda60a9a8f7f.herokuapp.com/create-product",
         {
@@ -86,15 +92,23 @@ export default function Shop() {
             colorOfCake: colorOfCake,
             colorOfMessageText: colorOfMessageText,
             messageOnCake: messageOnCake,
+            pickupTime: pickupTime,
+            pickupDate: pickupDate,
+            paymentType: paymentType,
           }),
         }
       );
+      setLoading(false);
 
       const data = await response.json();
 
       if (data) {
-        if (data?.paymentLink) {
-          window.location.href = data?.paymentLink;
+        if (paymentType === "At pickup") {
+          window.location.href = `/Cake-Order-Confirmation?confirmationnumber=${data?.orderId}`;
+        } else {
+          if (data?.paymentLink) {
+            window.location.href = data?.paymentLink;
+          }
         }
       } else {
         console.error("Failed to create product:", data.error);
@@ -128,6 +142,11 @@ export default function Shop() {
           <Header type={"normal"} />
         </div>
         <div className={styles.mainBodyDiv}>
+          {loading && (
+            <div className={styles.loader}>
+              <div className={styles.spinner} />
+            </div>
+          )}
           <div className={styles.mainCustomCakeContainerDiv}>
             <div className={styles.mainCustomCakeSecondContainerDiv}>
               <h1 className={styles.customCakeHeaderText}>
@@ -271,7 +290,9 @@ export default function Shop() {
                     messageOnCake,
                     colorOfMessageText,
                     colorOfCake,
-                    additionalInformation
+                    additionalInformation,
+                    pickupDate,
+                    pickupTime
                   ) => {
                     setNextCheck(newCheckEntered);
                     setName(name);
@@ -281,6 +302,8 @@ export default function Shop() {
                     setColorOfMessageText(colorOfMessageText);
                     setColorOfCake(colorOfCake);
                     setAdditionalInformation(additionalInformation);
+                    setPickupDate(pickupDate);
+                    setPickupTime(pickupTime);
                   }}
                 />
               )}
@@ -335,11 +358,21 @@ export default function Shop() {
                     {currentState === 3 && nextCheck && (
                       <div
                         onClick={() => {
-                          sendDatatoHeroku();
+                          sendDatatoHeroku("At pickup");
                         }}
                         className={styles.continueTextDiv}
                       >
-                        <p className={styles.continueText}>Checkout</p>
+                        <p className={styles.continueText}>Pay at pickup</p>
+                      </div>
+                    )}
+                    {currentState === 3 && nextCheck && (
+                      <div
+                        onClick={() => {
+                          sendDatatoHeroku("Paid Now");
+                        }}
+                        className={styles.continueTextDiv}
+                      >
+                        <p className={styles.continueText}>Pay now</p>
                       </div>
                     )}
                   </div>

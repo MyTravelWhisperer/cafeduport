@@ -13,16 +13,44 @@ const AdditionalInformation = ({ sendCheck }) => {
   const [colorOfMessageText, setColorOfMessageText] = useState("");
   const [colorOfCake, setColorOfCake] = useState("");
   const [additionalInformation, setAdditionalInformation] = useState("");
+  const [pickupDate, setPickupDate] = useState("");
+  const [pickupTime, setPickupTime] = useState("");
 
   useEffect(() => {
+    const now = new Date();
+
+    // Add 2 days
+    const futureDate = new Date(now);
+    futureDate.setDate(futureDate.getDate() + 2);
+
+    // Format date: YYYY-MM-DD
+    const date = futureDate.toISOString().split("T")[0];
+
+    // Format time: HH:MM
+    const hours = now.getHours().toString().padStart(2, "0");
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    const time = `${hours}:${minutes}`;
+
+    setPickupDate(date);
+    setPickupTime(time);
+  }, []);
+  useEffect(() => {
     const isNameValid = name.trim() !== "";
+    const isDateValid = pickupDate.trim() !== "";
+    const isTimeValid = pickupTime.trim() !== "";
 
     const isPhoneValid = /^\d{7,15}$/.test(phoneNumber);
     // simple check: only digits, 7-15 digits long (adjust as needed)
 
     const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-    if (isNameValid && isPhoneValid && isEmailValid) {
+    if (
+      isNameValid &&
+      isPhoneValid &&
+      isEmailValid &&
+      isTimeValid &&
+      isDateValid
+    ) {
       sendCheck(
         true,
         name,
@@ -31,7 +59,9 @@ const AdditionalInformation = ({ sendCheck }) => {
         messageOnCake,
         colorOfMessageText,
         colorOfCake,
-        additionalInformation
+        additionalInformation,
+        pickupDate,
+        pickupTime
       );
     } else {
       sendCheck(false);
@@ -98,6 +128,32 @@ const AdditionalInformation = ({ sendCheck }) => {
       </div>
       <div style={{ marginBottom: "20px" }}>
         <InputBox
+          inputType={"date"}
+          placeHolder={
+            "When would you like to pick up your cake? Let us know the date!"
+          }
+          helpText={"Required*"}
+          inputData={(newName) => {
+            setPickupDate(newName);
+          }}
+          value={pickupDate}
+        />
+      </div>
+      <div style={{ marginBottom: "20px" }}>
+        <InputBox
+          inputType={"time"}
+          placeHolder={
+            "When would you like to pick up your cake? Let us know the time!"
+          }
+          helpText={"Required*"}
+          inputData={(newName) => {
+            setPickupTime(newName);
+          }}
+          value={pickupTime}
+        />
+      </div>
+      <div style={{ marginBottom: "20px" }}>
+        <InputBox
           inputType={"number"}
           placeHolder={"Phone Number"}
           helpText={
@@ -144,7 +200,7 @@ const InputTextBox = ({ inputType, placeHolder, helpText, inputData }) => {
     </div>
   );
 };
-const InputBox = ({ inputType, placeHolder, helpText, inputData }) => {
+const InputBox = ({ inputType, placeHolder, helpText, inputData, value }) => {
   const handleChange = (e) => {
     inputData(e.target.value);
   };
@@ -152,12 +208,24 @@ const InputBox = ({ inputType, placeHolder, helpText, inputData }) => {
   return (
     <div className={styles.inputTextMainDiv}>
       <div className={styles.inputTextSecondMainDiv}>
-        <input
-          className={styles.inputTextBox}
-          type={inputType}
-          onChange={handleChange}
-          placeholder={placeHolder}
-        ></input>
+        {inputData === "date" ? (
+          <input
+            className={styles.inputTextBox}
+            type={inputType}
+            onChange={handleChange}
+            placeholder={placeHolder}
+            value={value}
+            min={value}
+          ></input>
+        ) : (
+          <input
+            className={styles.inputTextBox}
+            type={inputType}
+            onChange={handleChange}
+            placeholder={placeHolder}
+            value={value}
+          ></input>
+        )}
         <small className={styles.helpText}>{helpText}</small>
       </div>
     </div>
